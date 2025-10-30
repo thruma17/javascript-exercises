@@ -1,21 +1,17 @@
 const add = function (a, b) {
-  return (result = a + b);
+  return a + b;
 };
 
 const subtract = function (a, b) {
-  return (result = a - b);
+  return a - b;
 };
 
 const sum = function (arr) {
-  let result = 0;
-  for (let num in arr) {
-    result += arr[num];
-  }
-  return result;
+  return arr.reduce((result, current) => result + current, 0);
 };
 
 const multiply = function (arr) {
-  return (result = arr.reduce((prev, num) => prev * num));
+  return arr.reduce((result, current) => result * current);
 };
 
 const power = function (a, b) {
@@ -25,6 +21,11 @@ const power = function (a, b) {
   }
   return result;
 };
+
+// BETTER USE Math.pow()
+// const power = function (a, b) {
+//   return Math.pow(a, b);
+// };
 
 const factorial = function (num) {
   let result = 1;
