@@ -1,12 +1,12 @@
-const palindromes = function (word) {
+const palindromes = function (string) {
   const allowedChar = `abcdefghijklmnopqrstuvwxyz0123456789`;
-  const cleanedWord = word
+  const cleanedString = string
     .toLowerCase()
     .split(``)
     .filter((char) => allowedChar.includes(char))
     .join(``);
-  const reversedWord = cleanedWord.split(``).reverse().join(``);
-  return cleanedWord === reversedWord;
+  const reversedString = cleanedString.split(``).reverse().join(``);
+  return cleanedString === reversedString;
 };
 
 // Do not edit below this line
