@@ -1,6 +1,7 @@
 const palindromes = function (word) {
   const allowedChar = `abcdefghijklmnopqrstuvwxyz0123456789`;
   const cleanedWord = word
+    .toLowerCase()
     .split(``)
     .filter((char) => allowedChar.includes(char))
     .join(``);
