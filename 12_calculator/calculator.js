@@ -18,7 +18,13 @@ const multiply = function (arr) {
   return (result = arr.reduce((prev, num) => prev * num));
 };
 
-const power = function () {};
+const power = function (a, b) {
+  let result = a;
+  for (let i = 2; i <= b; i++) {
+    result *= a;
+  }
+  return result;
+};
 
 const factorial = function () {};
 
